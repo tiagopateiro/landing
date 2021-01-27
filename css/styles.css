@@ -1,0 +1,168 @@
+body, html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width:100%;
+	height:100%;
+    line-height: 1.5;
+    overflow-x: hidden;
+    
+    background: url(../assets/img/background.jpg) no-repeat center center fixed;	
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	
+    z-index:9;
+    -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: rgb(152, 158, 166);
+    font-weight: 700;
+    font-size: 2.25em;
+}
+
+h2 {
+    color: rgba(152, 158, 166, 0.7);
+    font-weight: 500;
+    font-size: 1.25em;
+}
+
+.wrapper {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+    padding: 2.5em 2.5em 2.5em 2.5em;
+}
+
+.calling-card {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    z-index: 1;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+    -moz-transition: opacity 1.25s ease-in-out 0s;
+    -webkit-transition: opacity 1.25s ease-in-out 0s;
+    -ms-transition: opacity 1.25s ease-in-out 0s;
+    transition: opacity 1.25s ease-in-out 0s;
+    border-radius: 2%;
+}
+
+.calling-card--content {
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 1;
+    padding: 1.5em 1.5em;
+    max-width: 100%;
+    width: 25em;
+}
+
+.calling-card--header img {
+    max-width: 100%;
+    display: inline-block;
+    width: 180px;
+    border-radius: 50%;
+}
+
+.calling-card--header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.calling-card--header picture {
+    order: -1;
+    display: block;
+    width: 100%;
+    flex-grow: 4;
+}
+.text-bio {
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    color: rgba(152, 158, 166, 0.7);
+    font-size: 1em;
+    letter-spacing: 0;
+    width: auto;
+    text-align: center;
+}
+
+.text-bio a,
+.text-bio a:focus,
+.text-bio a:hover,
+.text-bio a:visited {
+  color: rgba(152, 158, 166, 0.7);
+}
+
+.hobbies {
+    text-align: center;
+    font-size: 0.8em;
+    color: rgb(152, 158, 166);
+    margin: 0;
+}
+
+.hobbies > i {
+    margin: .2em;
+}
+
+.calling-card--footer {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.calling-card--footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.calling-card--footer li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0.375em;
+}
+
+.calling-card--footer a,
+.calling-card--footer a:visited,
+.calling-card--footer a:focus {
+    color:rgba(0, 0, 0, 0.8);
+}
+
+.calling-card--footer a:hover {
+    color:rgba(0, 0, 0, 1);
+}
