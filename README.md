@@ -1,2 +1,2 @@
-# landing-duck
-An awesome landing calling card
+# tiagopateiro.github.io
+An awesome personal landing calling card
